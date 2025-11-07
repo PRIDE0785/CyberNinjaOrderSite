@@ -1,5 +1,5 @@
 // API Base URL - Replace with your Railway backend URL
-const API_BASE_URL = 'https://your-railway-app.up.railway.app/api';
+const API_BASE_URL = 'mysql://root:JfLYZmmmGZQZMAzkReYtVVjEfgspJYBJ@turntable.proxy.rlwy.net:45102/railway';
 
 // Load products from database
 async function loadProducts(category = 'all') {
@@ -232,4 +232,5 @@ async function addSampleProducts() {
         console.error('Error adding sample products:', error);
         alert('Error adding sample products');
     }
+
 }

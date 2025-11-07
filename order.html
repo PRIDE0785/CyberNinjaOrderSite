@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order - TechDev Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>TechDev Solutions</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="order.html" class="active">Order Now</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="order-form">
+            <h2>Place Your Order</h2>
+            
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="customerName">Your Name *</label>
+                    <input type="text" id="customerName" name="customerName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="customerEmail">Email *</label>
+                    <input type="email" id="customerEmail" name="customerEmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="productCategory">Service Category *</label>
+                    <select id="productCategory" name="productCategory" required>
+                        <option value="">Select a category</option>
+                        <option value="design">Designs (Logos, UI/UX, Graphics)</option>
+                        <option value="software">Software (Web Apps, Mobile Apps)</option>
+                        <option value="service">Services (Consulting, Development)</option>
+                        <option value="animation">Animations (2D/3D, Videos)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="productDetails">Project Details *</label>
+                    <textarea id="productDetails" name="productDetails" rows="4" 
+                              placeholder="Describe your project requirements, features needed, timeline, etc." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">Budget Range ($)</label>
+                    <select id="budget" name="budget">
+                        <option value="50-100">$50 - $100</option>
+                        <option value="100-250">$100 - $250</option>
+                        <option value="250-500">$250 - $500</option>
+                        <option value="500-1000">$500 - $1,000</option>
+                        <option value="1000+">$1,000+</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="deadline">Desired Deadline</label>
+                    <input type="date" id="deadline" name="deadline">
+                </div>
+
+                <button type="submit" class="cta-button">Submit Order</button>
+            </form>
+
+            <div id="orderMessage" class="message" style="display: none;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TechDev Solutions</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

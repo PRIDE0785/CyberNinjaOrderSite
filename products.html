@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - TechDev Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>TechDev Solutions</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="order.html">Order Now</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-header">
+            <h2>Our Tech Products & Services</h2>
+            <p>Choose from our range of professional tech solutions</p>
+        </section>
+
+        <section class="products-container">
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="design">Designs</button>
+                <button class="filter-btn" data-category="software">Software</button>
+                <button class="filter-btn" data-category="service">Services</button>
+                <button class="filter-btn" data-category="animation">Animations</button>
+            </div>
+
+            <div id="productsList" class="products-grid">
+                <!-- Products loaded from database via JavaScript -->
+                <div class="loading">Loading products...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TechDev Solutions</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
